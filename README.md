@@ -25,28 +25,32 @@ The php query for the salesman ID's is vulnerable to SQLI.  In this example, it 
 Vulnerability #2: Session Hijacking
 
 The admin's cookie is seen through the dev tools.  This can be copied and pasted into a new browser session with the provided change_session.php.  Once changed, the person in the new session is now the admin.
-
+![alt](blueSessionHijacking.gif)
 
 ## Green
 
 Vulnerability #1: XSS
 
 The feedback box does not sanitize script input.  The script is then executed when an admin checks the feedback.  This could be used to steal admin cookies.
+![alt](greenXSS.gif)
 
 Vulnerability #2: User Enum
 
 When trying to log in, visual feedback is given if a user exists.  Bold if exists, not bold otherwise.
-
+![alt](greenUSEREnum.gif)
 
 ## Red
 
 Vulnerability #1: IDOR (Insecure direct object ref)
 
 Manually changing the number in the php query gives results that are not public.
+![alt](redIDOR.gif)
 
 Vulnerability #2: CSRF
 
 Able to send a request from burp to manipulate information on the site.
+
+![alt](redCSRF.gif)
 
 
 ## Notes
