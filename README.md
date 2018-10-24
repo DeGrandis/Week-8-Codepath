@@ -19,6 +19,8 @@ Each version of the site has been given two of the six vulnerabilities. (In othe
 Vulnerability #1: SQLI
 
 The php query for the salesman ID's is vulnerable to SQLI.  In this example, it sleeps when the sleep command is passed.
+![alt](blueSQLI.gif)
+
 
 Vulnerability #2: Session Hijacking
 
